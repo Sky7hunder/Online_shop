@@ -1,0 +1,29 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.product-row{
+  a h4{
+    color: #0A3152;
+  }
+}
+.products{
+  float: right;
+}
+.product-row:hover{
+  background-color: #7B87D8;
+  a h4{
+    color: #0A3152;
+  }
+  a h4:hover{
+    color: #6BFF94;
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+  .btn-primary{
+    background-color: #285e8e;
+  }
+  .btn-primary:hover{
+    background-color: #2ED05B;
+    border-color: #2EA963;
+  }
+}

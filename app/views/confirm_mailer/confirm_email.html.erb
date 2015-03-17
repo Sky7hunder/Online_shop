@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>Hi <%= @order.user_name %>!</h1>
+<p>You issued order in our store:</p><br/>
+<div>
+  <ol>
+    <%= @order.order_items.map { |oi|
+      "<li>#{oi.product.name}, quantity - #{oi.quantity}, sum- #{oi.total_price}</li>"
+    }.join('<br/>').html_safe %>
+  </ol>
+</div><br/>
+<p>Всего к оплате: <%= @order.total %> грн.</p><br/>
+Ваш номер телефона: <%= @order.user_phone %><br/><br/>
+Наш менеджер скоро свяжется с вами.<br/>
+Спасибо за покупку!
+</body>
+</html>

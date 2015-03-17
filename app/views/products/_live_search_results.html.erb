@@ -1,0 +1,14 @@
+<% if params[:search].present? %>
+  <% @products.each do |product| %>
+    <%= link_to product do %>
+      <div class="well">
+
+        <div class="row">
+          <div class="">
+            <h4><%= product.name %></small></h4>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>

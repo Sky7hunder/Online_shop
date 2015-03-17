@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: drspzpkvd
+  api_key: '843344326945238'
+  api_secret: RZTHAYFD6RL0rYivl94WlhRq0Bk
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: drspzpkvd
+  api_key: '843344326945238'
+  api_secret: RZTHAYFD6RL0rYivl94WlhRq0Bk
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: drspzpkvd
+  api_key: '843344326945238'
+  api_secret: RZTHAYFD6RL0rYivl94WlhRq0Bk
+  enhance_image_tag: true
+  static_image_support: false

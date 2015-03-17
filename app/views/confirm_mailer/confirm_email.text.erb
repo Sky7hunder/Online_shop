@@ -1,0 +1,9 @@
+Hi <%= @order.user_name %>!
+You issued order in our store:
+    <%= @order.order_items.map { |oi|
+      "#{oi.product.name}, quantity - #{oi.quantity}, sum- #{oi.total_price}"
+    } %>
+Всего к оплате: <%= @order.total %> грн.
+Ваш номер телефона: <%= @order.user_phone %>
+Наш менеджер скоро свяжется с вами.
+Спасибо за покупку!
